@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 const News = (props) => {
-    const {author,content,description,publishedAt}= props.news
+    const {author,content,description,publishedAt,urlToImage}= props.news
     return (
         <div >
             <div>
@@ -17,7 +17,7 @@ const News = (props) => {
           component="img"
           alt="Contemplative Reptile"
           height="240"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
+          image={urlToImage}
           title="Contemplative Reptile"
         />
         <CardContent>
